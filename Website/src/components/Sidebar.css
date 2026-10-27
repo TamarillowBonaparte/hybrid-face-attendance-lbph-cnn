@@ -1,0 +1,72 @@
+.sidebar {
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(229, 231, 235, 0.5);
+  border-radius: 1rem;
+  padding: 0.875rem;
+  position: sticky;
+  top: 6rem;
+  width: 100%;
+}
+
+.sidebar-title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 1rem;
+  text-align: left;
+  padding-left: 0.25rem;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+/* Tombol menu */
+.sidebar-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.625rem;
+  text-align: left;
+  transition: all 0.2s ease;
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+
+/* Saat aktif */
+.sidebar-item.active {
+  background-color: #2563eb;
+  color: white;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.25);
+}
+
+/* Saat tidak aktif */
+.sidebar-item.inactive {
+  color: #4b5563;
+}
+
+.sidebar-item.inactive:hover {
+  background-color: rgba(243, 244, 246, 0.5);
+  color: #111827;
+}
+
+/* Ikon */
+.sidebar-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+}
+
+/* Label */
+.sidebar-label {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
